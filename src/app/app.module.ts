@@ -5,10 +5,12 @@ import { MatInputModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AllowkeysDirective } from './allowkeys.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllowkeysDirective
   ],
   imports: [
     BrowserModule,

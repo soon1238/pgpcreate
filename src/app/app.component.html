@@ -18,13 +18,13 @@
   <div ng-app="myApp" ng-controller="formCtrl">
     <form>
       
-      name: <input class='inputField' type="text" [(ngModel)]="pgpdetails.name" [ngModelOptions]="{standalone: true}">
+      name: <input Allowkeys="Decimal_plus_minus" class='inputField' type="text" [(ngModel)]="pgpdetails.name" [ngModelOptions]="{standalone: true}">
      <br>
-      email: <input class='inputField' type="text" [(ngModel)]="pgpdetails.email" [ngModelOptions]="{standalone: true}">
+      email: <input Allowkeys="Prevent_enter" class='inputField' type="text" [(ngModel)]="pgpdetails.email" [ngModelOptions]="{standalone: true}">
       <br>
-      bitness: <input class='inputField' type="text" [(ngModel)]="pgpdetails.bitness" [ngModelOptions]="{standalone: true}">
+      bitness: <input Allowkeys="Numbers" class='inputField' type="text" [(ngModel)]="pgpdetails.bitness" [ngModelOptions]="{standalone: true}">
       <br>
-      passphrase: <input class='inputField' type="text" [(ngModel)]="pgpdetails.passphrase" [ngModelOptions]="{standalone: true}">
+      passphrase: <input  Allowkeys="Dates" class='inputField' type="text" [(ngModel)]="pgpdetails.passphrase" [ngModelOptions]="{standalone: true}">
 
     </form>
     <button (click)="myFunction()">Generate Key</button>
